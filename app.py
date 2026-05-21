@@ -65,7 +65,7 @@ operation_mode = st.sidebar.radio("运行状态", list(mode_map.keys()), format_
 
 # ==================== 主界面区 ====================
 st.title("流体搅拌设备选型与性能评价系统")
-st.markdown("<span style='color:#6c757d; font-size:14px;'>山东大学机械工程学院智能制造 | 计算平台 V1.0</span>", unsafe_allow_html=True)
+st.markdown("<span style='color:#6c757d; font-size:14px;'>山东大学机械工程学院智能制造 | 计算平台 V1.1</span>", unsafe_allow_html=True)
 st.markdown("---")
 
 user_case = {
