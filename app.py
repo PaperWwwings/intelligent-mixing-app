@@ -19,7 +19,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 隐藏 Streamlit 默认的右上角菜单和底部水印，提升软件原生感
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
@@ -105,7 +104,6 @@ if 'results' in st.session_state:
     st.subheader("选型结果概览")
     
     cols = st.columns(3)
-    # 使用工业化命名：最优推荐方案，备选方案A，备选方案B
     rank_labels = ["最优推荐方案", "备选方案 A", "备选方案 B"]
     
     for idx, (col, r) in enumerate(zip(cols, results)):
@@ -156,7 +154,6 @@ if 'results' in st.session_state:
         for i, r in enumerate(results)
     ])
     
-    # 图表配色调整为严谨的数据可视化色系 (Muted colors)
     colors = ['#4e79a7', '#a0cbe8', '#f28e2b']
     
     fig_radar = go.Figure()
